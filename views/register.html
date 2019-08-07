@@ -45,6 +45,7 @@
   <script>
     $('#register_form').on('submit', function (e) {
       e.preventDefault()
+      // 表单序列化
       var formData = $(this).serialize()
       $.ajax({
         url: '/register',
